@@ -3,7 +3,7 @@
 ## Overview
 
 A simple non-framework PHP app that is charged with entering two files into a
-DB then presenting the data within this files using a JS driven front end.
+DB then presenting the data within these files using a JS driven front end.
 
 The PHP app is set up using a front controller pattern, leveraging Apache to
 drive all requests through a single script which calls the relevant controller.
@@ -25,6 +25,8 @@ done using a prepared PDO statement with bound parameters.
 The locations didn't come with lat and long so this was obtained from
 https://www.met.ie/marine/buoy_locations.asp
 
+The database structure can be seen in model/DBSetup.class.php
+
 ## Visualising the Data
 
 The data is presented to the user using the Google Map API. We load the map of
@@ -33,7 +35,12 @@ The app fetches the data for that date from the DB using ajax and draws markers
 for each location. Where data exists for a marker, it is displayed on mouse
 over.
 
-## Stretch Goal
+To simplify date handling, the app uses unix_timestamps in the code, converting
+them to date and time for the user.
+
+## Stretch Goal and Known Issues
 
 The app needs a more granular way of moving the slider, perhaps events
 listening for the arrow keys.
+
+JS is being overly clever and converting the times to the users local time.
