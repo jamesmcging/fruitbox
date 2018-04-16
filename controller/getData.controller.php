@@ -3,8 +3,8 @@
 // If we have a third entry in the $arrURIElements it is the date being
 // requested
 $sDateRequested = null;
-if (isset($arrURIelements[3])) {
-  $sDateRequested = $arrURIelements[3];
+if (isset($arrURIelements[2])) {
+  $sDateRequested = $arrURIelements[2];
 }
 
 
