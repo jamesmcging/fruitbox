@@ -1,5 +1,7 @@
 # fruitbox, a simple PHP visualisation using the Google Map API
 
+url: www.jamiemcging.com
+
 ## Overview
 
 A simple non-framework PHP app that is charged with entering two files into a
@@ -44,3 +46,5 @@ The app needs a more granular way of moving the slider, perhaps events
 listening for the arrow keys.
 
 JS is being overly clever and converting the times to the users local time.
+
+The loadData needs a warning alert - it takes over 10 minutes to load...

@@ -123,7 +123,7 @@ const dateSelector = {
   },
 
   getData: function(timestamp) {
-    let sURL = 'http://localhost/getData/' + timestamp;
+    let sURL = 'http://www.jamiemcging.com/getData/' + timestamp;
 
     var jqxhr = $.get(sURL)
       .done(function(data) {
