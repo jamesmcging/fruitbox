@@ -16,10 +16,10 @@ require 'model/db.class.php';
 // Examine the $_SERVER['REQUEST_URI'] by splitting on /
 $arrURIelements = explode('/', $_SERVER['REQUEST_URI']);
 
-if (isset($arrURIelements[2])) {
+if (isset($arrURIelements[1])) {
 
   // The primary resource is the second entry in the $arrURIElements
-  $sResource = $arrURIelements[2];
+  $sResource = $arrURIelements[1];
 }
 
 switch ($sResource) {

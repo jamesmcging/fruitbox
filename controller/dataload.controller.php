@@ -25,9 +25,9 @@ error_reporting(E_ALL); ini_set('display_errors', 1);
 //   }
 // }
 
-require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/fruitbox/model/DBSetup.class.php';
-require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/fruitbox/model/Locations.class.php';
-require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/fruitbox/model/Met.class.php';
+require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'model/DBSetup.class.php';
+require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'model/Locations.class.php';
+require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'model/Met.class.php';
 
 echo '<h2>Data Load</h2><hr>';
 
@@ -41,5 +41,5 @@ $objLocations->loadLocations();
 $objMet = new Met();
 $objMet->loadMetData();
 
-echo '<a href="/fruitbox/">Link to map</a>';
+echo '<a href="/">Link to map</a>';
 ?>

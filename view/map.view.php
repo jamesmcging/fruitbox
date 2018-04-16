@@ -27,10 +27,10 @@ echo <<<HTML
     <title>Demonstration of data import and display</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/fruitbox/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/fruitbox/css/fruitbox.css" rel="stylesheet">
+    <link href="/css/fruitbox.css" rel="stylesheet">
   </head>
 
   <body>
@@ -44,10 +44,10 @@ echo <<<HTML
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/fruitbox/">Map<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Map<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/fruitbox/loadData">Load Data</a>
+            <a class="nav-link" href="/loadData">Load Data</a>
           </li>
         </ul>
       </div>
@@ -68,10 +68,10 @@ echo <<<HTML
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/fruitbox/js/jquery.js"></script>
-    <script src="/fruitbox/js/popper.min.js"></script>
-    <script src="/fruitbox/js/bootstrap.min.js"></script>
-    <script src="/fruitbox/js/fruitbox.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/fruitbox.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1FTh_fLmTZreh9f7Ow7T_bfQJrOOLk3k&callback=initMap">
     </script>

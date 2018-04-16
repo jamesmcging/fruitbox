@@ -8,7 +8,7 @@ if (isset($arrURIelements[3])) {
 }
 
 
-require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'/fruitbox/model/Met.class.php';
+require $_SERVER['CONTEXT_DOCUMENT_ROOT'].'model/Met.class.php';
 $objMet = new Met();
 
 // header('Content-Type: application/json');
