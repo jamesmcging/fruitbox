@@ -1,4 +1,5 @@
 <?php
+require '.env';
 
 class DB {
 
@@ -13,7 +14,7 @@ class DB {
 	public static function getInstance() {
 		if (!self::$instance)
 		{
-        self::$instance = new PDO('mysql:host=localhost:13306;dbname=fruitbox','root','password');
+        self::$instance = new PDO(DB_CONNECTION_STRING, DB_USER, DB_PASSWORD);
         self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         self::$instance->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
 		}
